@@ -15,7 +15,7 @@ def search():
     if form.validate_on_submit():
         # do xx xhere to sql
         data=db.searchdb(form, mydb)
-        flash('恭喜 操作成功')
+        flash('Only [Wechat ID] and [Last Name] BOTH match our records, you can get what you want:')
         for  i in (data):
 
                 for index, j in enumerate(i):
@@ -32,7 +32,7 @@ def inputdata():
     if form.validate_on_submit():
         # do xx xhere to sql
         data=db.insertion(form, mydb)
-        flash('恭喜, 操作成功')
+        flash('SUCCESS! We recorded following infomation:')
         for i in (data):
             if i !='':
                 flash(i)
@@ -42,4 +42,15 @@ def inputdata():
 
 @app.route('/',methods=['GET', 'POST'])
 def index():
-    return render_template('base.html',  title='1 In')
+        # flash('input')
+    form = InputForm()
+    if form.validate_on_submit():
+        # do xx xhere to sql
+        data=db.insertion(form, mydb)
+        flash('SUCCESS! We recorded following infomation:')
+        for i in (data):
+            if i !='':
+                flash(i)
+
+
+    return render_template('input.html',  title='3 In', form=form)

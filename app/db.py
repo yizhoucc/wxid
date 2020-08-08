@@ -20,11 +20,11 @@ def insertion(form, mydb):
 
 
 
-def searchdb(form, mydb):
+def searchdb(form, mydb,number=1):
 
     mycursor = mydb.cursor()
 
-    sql="SELECT * FROM wx.wxdata where wxid = '{}' and xing = '{}' limit 10".format(form.wxid.data,form.lastname.data)
+    sql="SELECT * FROM wx.wxdata where wxid = '{}' and xing = '{}' ORDER BY id DESC  LIMIT {} ".format(form.wxid.data,form.lastname.data,number)
     print(sql)
     mycursor.execute(sql)
 
