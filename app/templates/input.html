@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>input page</h1>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+
+
+<p>
+    {{ form.mywxid.label }}<br>
+    {{ form.mywxid(size=32) }}<br>
+    {% for error in form.mywxid.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+</p>
+
+<p>
+    {{ form.mylname.label }}<br>
+    {{ form.mylname(size=32) }}<br>
+    {% for error in form.mylname.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+</p>
+
+<p>
+    {{ form.app1.label }}<br>
+    {{ form.app1(size=32) }}<br>
+    {% for error in form.app1.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+</p>
+<p>
+    {{ form.id1.label }}<br>
+    {{ form.id1(size=32) }}<br>
+    {% for error in form.id1.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+</p>
+<p>
+    {{ form.app2.label }}<br>
+    {{ form.app2(size=32) }}<br>
+    {% for error in form.app2.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+</p>
+
+<p>
+    {{ form.id2.label }}<br>
+    {{ form.id2(size=32) }}<br>
+    {% for error in form.id2.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+</p>
+<p>
+    {{ form.app3.label }}<br>
+    {{ form.app3(size=32) }}<br>
+    {% for error in form.app3.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+</p>
+
+<p>
+    {{ form.id3.label }}<br>
+    {{ form.id3(size=32) }}<br>
+    {% for error in form.id3.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+</p>
+
+
+<p>
+    {{ form.submit2.label }}<br>
+    {{ form.submit2(size=32) }}<br>
+    {% for error in form.submit2.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+</p>
+
+</form>
+
+{% endblock %}

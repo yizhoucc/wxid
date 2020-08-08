@@ -1,0 +1,28 @@
+<html>
+    <!-- <head>
+        {% if title %}
+        <title>{{ title }} - Microblog</title>
+        {% else %}
+        <title>Welcome to Microblog</title>
+        {% endif %}
+    </head> -->
+    <body>
+        <div>
+            rua:
+            <a href="{{ url_for('search') }}">Search</a> 
+            <a  ></a> <span></span>
+            <a href="{{ url_for('inputdata') }}">Input</a>
+        </div>
+        <hr>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </body>
+</html>
