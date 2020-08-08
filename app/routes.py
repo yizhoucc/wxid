@@ -16,7 +16,12 @@ def search():
         # do xx xhere to sql
         data=db.searchdb(form, mydb)
         flash('恭喜 操作成功')
-        flash(data)
+        for  i in (data):
+
+                for index, j in enumerate(i):
+                    if index>2:
+                        if j !='':
+                            flash(j)
 
     return render_template('search.html',  title='2 In', form=form)
 
@@ -28,7 +33,9 @@ def inputdata():
         # do xx xhere to sql
         data=db.insertion(form, mydb)
         flash('恭喜, 操作成功')
-        flash(data)
+        for i in (data):
+            if i !='':
+                flash(i)
 
 
     return render_template('input.html',  title='3 In', form=form)
