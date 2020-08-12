@@ -1,6 +1,6 @@
 
 
-        <div><center>
+
 		<center><font size="10" color="black">郑重承诺：本网站为公益性质，绝不参与任何形式的信息交易。</font></center>
 		<hr style="width:30%;text-align:left;center">
 		<center><font size="6" color="black">《使用说明》</font></center>
@@ -18,15 +18,5 @@
 		<hr style="width:30%;text-align:left;center">
 		<center><font size="4" color="black">【使用情形】</font></center>
 		<center><font size="3" color="black">微信不能用了。我现在要找那个不太熟的小王办点事，他的备用联系方式是啥来的？让我去postwechat.com看一下！<font></font></font></center><font size="3" color="black"><font>
-		    <hr style="width:50%;text-align:left;center">
-            <a href="http://postwechat.com/search"><font size="10" color="blue">Search</font> </a> 
-            <hr style="width:50%;text-align:left;center">
-            <a href="http://postwechat.com/input"><font size="10" color="blue">Input</font></a></font></font></center><font size="3" color="black"><font>
-        </font></font></div><font size="3" color="black"><font>
-        <hr style="width:50%;text-align:left;center">
-        <center></center>
-        <center></center>
-        <center></center>
-       <center> 
 
 
