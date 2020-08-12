@@ -1,6 +1,5 @@
 
 
-    </head><body>
         <div><center>
 		<center><font size="10" color="black">郑重承诺：本网站为公益性质，绝不参与任何形式的信息交易。</font></center>
 		<hr style="width:30%;text-align:left;center">
